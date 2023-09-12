@@ -45,9 +45,6 @@ const server = createServer((req, res) => {
       .join("");
     const output = tempOverview.replace("{%TV_SHOW_CARDS%}", cardsHtml);
     res.end(output);
-  } else if (pathname === "/api") {
-    res.writeHead(200, { "Content-type": "application/json" });
-    res.end(data);
   } else if (pathname === "/tvshow") {
     res.writeHead(200, { "Content-type": "text/html" });
     const show = movie_data[query.id];
