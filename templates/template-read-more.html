@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TV Shows - Product</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "DM Mono", monospace !important;
+        background: #0f0c29; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #24243e,
+          #302b63,
+          #0f0c29
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #24243e,
+          #302b63,
+          #0f0c29
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+      .card-container {
+        max-width: 1202px;
+        margin: 0 auto;
+        /* display: flex;
+        justify-content: center;
+        gap: 90px; */
+      }
+      .show-container {
+        position: relative;
+        margin-top: 50px;
+        background-color: #d5d5a0;
+        color: #121314;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-column-gap: 35px;
+        grid-row-gap: 35px;
+        padding: 150px;
+      }
+      .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        grid-area: 1 / 1 / 5 / 2;
+        border-right: 1px solid #121314;
+        padding-bottom: 55px;
+      }
+      .left h1 {
+        background-color: #121314;
+        color: #66a93a;
+        padding: 10px;
+      }
+      .left h2 {
+        margin-top: 10px;
+      }
+      .left p {
+        margin-top: 5px;
+      }
+      .middle {
+        grid-area: 1 / 2 / 5 / 4;
+        padding-top: 50px;
+        border-right: 1px solid #121314;
+      }
+      .middle h2 {
+        display: inline;
+      }
+
+      .middle p {
+        font-size: 18px;
+        line-height: 28px;
+      }
+      .right {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: end;
+        grid-area: 1 / 4 / 5 / 5;
+      }
+      .right a {
+        font-size: 16px;
+        line-height: 26px;
+        text-decoration: none;
+        background-color: #121314;
+        color: #66a93a;
+        border-radius: 20px;
+        padding: 10px 40px;
+        transition: 0.27s all ease-out;
+        margin-right: 20px;
+        margin-bottom: 20px;
+      }
+      .right a:hover {
+        transform: scale(1.1);
+      }
+
+      .adult-tag {
+        background-color: #121314;
+        color: #ffffff;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        padding: 40px 27px;
+        margin-right: 40px;
+        margin-top: 20px;
+        transform: rotate(25deg);
+      }
+      .not-adult {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="show-container">
+        <div class="left">
+          <!-- <img src="{%IMAGE%}" alt="" /> -->
+          <h1>{%TV_SHOW_NAME%}</h1>
+          <h2>{%IMAGE%}</h2>
+          <h2>Authors</h2>
+          <p>{%AUTHORS%}</p>
+          <h2>Main characters:</h2>
+          <p>{%MAIN_CHARACTERS%}</p>
+        </div>
+        <div class="middle">
+          <h2>Genre</h2>
+          <p>{%GENRE%}</p>
+          <h2>Seasons</h2>
+          <p>{%SEASONS%}</p>
+          <h2>Location</h2>
+          <p>{%LOCATION%}</p>
+          <h2>Description</h2>
+          <p>{%DESCRIPTION%}</p>
+        </div>
+        <div class="right">
+          <div class="adult-tag {%NOT_ADULT%}">adult</div>
+          <a href="./overview">Go Back</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

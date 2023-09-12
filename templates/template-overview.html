@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TV Shows -Overview</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "DM Mono", monospace !important;
+        background: #0f0c29; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #24243e,
+          #302b63,
+          #0f0c29
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #24243e,
+          #302b63,
+          #0f0c29
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+      .card-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 90px;
+      }
+      .card {
+        margin-top: 150px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        max-width: 373px;
+        background-color: #d5d5a0;
+        padding-bottom: 25px;
+      }
+      .card h2 {
+        font-size: 22px;
+        line-height: 32px;
+        border-bottom: 1px solid #121314;
+      }
+      .card p {
+        font-size: 16px;
+        line-height: 26px;
+        background-color: #121314;
+        color: #66a93a;
+        padding: 38px 27px;
+      }
+      .card a {
+        font-size: 16px;
+        line-height: 26px;
+        text-decoration: none;
+        background-color: #121314;
+        color: #66a93a;
+        border-radius: 20px;
+        padding: 10px 40px;
+        transition: 0.27s all ease-out;
+      }
+      .card a:hover {
+        transform: scale(1.2);
+      }
+      .adult-tag {
+        position: absolute;
+        right: -50px;
+        top: -40px;
+        background-color: #66a93a;
+        color: #ffffff;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        padding: 37px 25px;
+      }
+      .not-adult {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-container">{%TV_SHOW_CARDS%}</div>
+  </body>
+</html>

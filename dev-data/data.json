@@ -1,0 +1,50 @@
+[
+  {
+    "id": 0,
+    "showName": "Rick and Morty",
+    "image": "📺 🚀 🌌 🔫",
+    "location": "Various Locations",
+    "genre": "Science Fiction, Comedy",
+    "seasons": 5,
+    "mainCharacters": "Rick and Morty",
+    "authors": ["Dan Harmon", "Justin Roiland"],
+    "adult": true,
+    "description": "Join the zany adventures of the genius scientist Rick and his lovable, albeit easily influenced grandson Morty in the 'Rick and Morty' franchise. Explore mind-bending dimensions and laugh out loud as they navigate through hilarious and thought-provoking situations across five seasons."
+  },
+  {
+    "id": 1,
+    "showName": "South Park",
+    "image": "⬇ 🏞 🧢",
+    "location": "Colorado, USA",
+    "genre": "Animation, Comedy",
+    "seasons": 24,
+    "mainCharacters": "Stan, Kyle, Cartman, Kenny",
+    "authors": ["Trey Parker", "Matt Stone"],
+    "adult": true,
+    "description": "Welcome to the outrageous world of 'South Park'! In this franchise, follow the antics of four boys - Stan, Kyle, Cartman, and Kenny - as they tackle the quirks and absurdities of their small Colorado town. With 24 seasons, expect irreverent humor and sharp social commentary."
+  },
+  {
+    "id": 2,
+    "showName": "The Simpsons",
+    "image": "🟡 💛 🟡 💛",
+    "location": "Springfield, USA",
+    "genre": "Animation, Comedy",
+    "seasons": 32,
+    "mainCharacters": "Homer, Marge, Bart, Lisa, Maggie",
+    "authors": ["Matt Groening"],
+    "adult": false,
+    "description": "Step into the vibrant world of 'The Simpsons' franchise! Join the iconic Simpsons family - Homer, Marge, Bart, Lisa, and Maggie - as they navigate the humorous ups and downs of life in Springfield. With 32 seasons, relive classic moments and heartfelt hilarity."
+  },
+  {
+    "id": 3,
+    "showName": "Family Guy",
+    "image": "👨‍👩‍👧‍👧👨‍👩‍👧‍👧👨‍👩‍👧‍👧👨‍👩‍👧‍👧",
+    "location": "Quahog, USA",
+    "genre": "Animation, Comedy",
+    "seasons": 21,
+    "mainCharacters": "Stewie, Peter, Lois, Meg, Chris, Brian",
+    "authors": ["Seth MacFarlane", "David Zuckerman"],
+    "adult": true,
+    "description": "Embark on a time-traveling adventure with the 'Family Guy' franchise! Join Stewie Griffin, the diabolical baby genius, and the rest of the Griffin family - Peter, Lois, Meg, Chris, and Brian the talking dog - in 21 seasons of hilarious misadventures and absurdity."
+  }
+]
